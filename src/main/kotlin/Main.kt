@@ -1,7 +1,22 @@
 fun main(args: Array<String>) {
-    println("Hello World!")
+    var number = 12
+    var numberString = ""
 
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
+    when (number){
+        1 -> numberString = "één"
+        2 -> numberString = "twee"
+        3 -> numberString = "drie"
+        4 -> numberString = "vier"
+        5 -> numberString = "vijf"
+        6 -> numberString = "zes"
+        7 -> numberString = "zeven"
+        8 -> numberString = "acht"
+        9 -> numberString = "negen"
+        10 -> numberString = "tine"
+        !in 1..10 -> numberString = "Out of Range"
+        else -> numberString = "Unknown"
+
+    }
+
+    println("Numbers in Dutch: $number is $numberString")
 }
